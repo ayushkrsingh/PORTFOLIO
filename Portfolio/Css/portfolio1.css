@@ -400,8 +400,8 @@ nav .menu > div {
     background: linear-gradient(40deg,  #ffced0d2, #ffffff 90%);
     backdrop-filter: blur(3px);
     border-radius: 50%;
-    width: 250rem;
-    height: 250rem;
+    width: 300rem;
+    height: 300rem;
     display: flex;
     flex: none;
     align-items: center;
