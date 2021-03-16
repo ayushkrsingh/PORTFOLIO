@@ -1183,13 +1183,12 @@ footer p img{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: none; */
-    transition: .1s;
 }
 
 .web-loader-cont .loader {
     width: 10rem;
     height: 10rem;
+    border-radius: 2rem;
     background: rgb(251, 255, 0);
     animation: loaderani 1s linear infinite;
 }
