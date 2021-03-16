@@ -1168,6 +1168,47 @@ footer p img{
 
 
 
+/* Loader */
+
+
+.web-loader-cont {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000;
+    z-index: 9999999;
+    cursor: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    transition: .1s;
+}
+
+.web-loader-cont .loader {
+    width: 10rem;
+    height: 10rem;
+    background: rgb(251, 255, 0);
+    animation: loaderani 1s linear infinite;
+}
+
+@keyframes loaderani {
+    0%, 70%{
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-400deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+}
+
+
 
 
 
