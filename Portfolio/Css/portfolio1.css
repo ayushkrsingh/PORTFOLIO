@@ -643,7 +643,7 @@ nav .toggler:checked *{
 }
 .home-back .my-photo-in-me-about .photo-my{
     width: 30rem;
-    border-radius: 20% 10% 20% 40%;
+    border-radius: 50%;
     border: 1px dashed black;
     box-shadow: 0px 0px 40px 3px #00000049;
     transition: transform 0.2s ease;
@@ -1287,9 +1287,6 @@ footer p img{
     }
     .home-back .my-photo-in-me-about{
         right: 3rem;
-    }
-    .home-back .my-photo-in-me-about .photo-my{
-        border-radius: 50%;
     }
     .home-back .my-photo-in-me-about{
         top: 33rem;
