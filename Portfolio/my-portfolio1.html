@@ -320,6 +320,9 @@
     <footer>
         <p>By- Ayush Kumar Singh <img src="Img/copyright.png" alt="">  2021, All Right Reserved</p>
     </footer>
+    <div class="web-loader-cont">
+        <div class="loader"></div>
+    </div>
 
 </body>
 <script>
@@ -337,9 +340,12 @@
     })
 
 
-    // $(window).on("load",function(){
-    //     $(".web-loader-cont").fadeOut("slow");
-    // });
+
+    let elemClass = document.getElementsByClassName("web-loader-cont");
+    window.onload = function () {
+        elemClass[0].style.display = "none";
+    }
+
     
 </script>
 </html>
