@@ -1183,27 +1183,79 @@ footer p img{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* display: none; */
+    transition: .5s;
+}
+.web-loader-cont .loader{
+    position: absolute;
+    width: 8rem;
+    height: 12rem;
+    border-radius: .5rem;
+    background: #fbff00;
+    box-shadow: 0 0 10rem .1rem #ffff0025;
+    overflow: hidden;
+    animation: ani-loader1 1s alternate cubic-bezier(1, -0.44, 0, 1.44) infinite;
+    transition: .5s;
+}
+.web-loader-cont .loader::after{
+    content: '';
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    width: 7rem;
+    height: 11rem;
+    /* border-radius: 5rem; */
+    background: #000000;
+}
+.loader .fill-load{
+    position: absolute;
+    top: 0rem;
+    left: -6rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    z-index: 3;
+    background: #ffff00;
+    animation: ani-loader2 2s alternate cubic-bezier(1, -0.44, 0, 1.44) infinite;
+}
+.loader .fill-load::before{
+    content: '';
+    position: absolute;
+    top: -7rem;
+    left: 0rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: #ffff002c;
+    animation: ani-loader2 1s alternate cubic-bezier(1, -0.44, 0, 1.44) infinite;
+}
+.loader .fill-load::after{
+    content: '';
+    position: absolute;
+    top: -5rem;
+    left: 0rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: #ffff0079;
+    animation: ani-loader2 2.5s alternate cubic-bezier(1, -0.44, 0, 1.44) infinite;
 }
 
-.web-loader-cont .loader {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 2rem;
-    background: rgb(251, 255, 0);
-    animation: loaderani 1s linear infinite;
+@keyframes ani-loader1{
+    0%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(5deg);
+    }
 }
-
-@keyframes loaderani {
-    0%, 70%{
-        transform: rotate(0deg);
+@keyframes ani-loader2{
+    0%{
+        transform: translateY(9rem);
     }
 
-    100% {
-        transform: rotate(-400deg);
-    }
-
-    50% {
-        transform: rotate(360deg);
+    100%{
+        transform: translateY(4rem);
     }
 }
 
