@@ -1184,8 +1184,6 @@ footer p img{
     justify-content: center;
     align-items: center;
     /* display: none; */
-    pointer-events: none;
-    transition: .5s;
 }
 
 .web-loader-cont .loader{
@@ -1197,8 +1195,6 @@ footer p img{
     box-shadow: 0 0 10rem .1rem #ffff0025;
     overflow: hidden;
     animation: ani-loader1 1s alternate cubic-bezier(1, -0.44, 0, 1.44) infinite;
-    pointer-events: none;
-    transition: .5s;
 }
 .web-loader-cont .loader::after{
     content: '';
@@ -1209,7 +1205,6 @@ footer p img{
     height: 11rem;
     /* border-radius: 5rem; */
     background: #000000;
-    pointer-events: none;
 }
 .loader .fill-load{
     position: absolute;
@@ -1221,7 +1216,6 @@ footer p img{
     z-index: 3;
     background: #ffff00;
     animation: ani-loader2 2s alternate cubic-bezier(1, -0.44, 0, 1.44) infinite;
-    pointer-events: none;
 }
 .loader .fill-load::before{
     content: '';
@@ -1233,7 +1227,6 @@ footer p img{
     border-radius: 50%;
     background: #ffff002c;
     animation: ani-loader2 1s alternate cubic-bezier(1, -0.44, 0, 1.44) infinite;
-    pointer-events: none;
 }
 .loader .fill-load::after{
     content: '';
@@ -1245,7 +1238,6 @@ footer p img{
     border-radius: 50%;
     background: #ffff0079;
     animation: ani-loader2 2.5s alternate cubic-bezier(1, -0.44, 0, 1.44) infinite;
-    pointer-events: none;
 }
 
 @keyframes ani-loader1{
